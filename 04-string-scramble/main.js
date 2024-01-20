@@ -7,6 +7,15 @@ function StringScramble(str1, str2) {
     // find the index of character in str1
     let index = str1.indexOf(character);
 
-    console.log(index);
+    // if character is not found
+    if (index === -1) {
+      return false;
+    }
+    // remove the character from str1
+    str1 = str1.substring(0, index) + str1.substring(index + 1);
   }
+
+  return true;
 }
+
+console.log(StringScramble("cdore", "coder"));

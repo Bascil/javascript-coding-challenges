@@ -15,4 +15,4 @@ function RunLength(str) {
 }
 
 // example
-console.log(RunLength(""));
+console.log(RunLength("wwwggopp"));
