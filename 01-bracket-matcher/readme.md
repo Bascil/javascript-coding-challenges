@@ -8,3 +8,13 @@ Input: "(coder)(byte))"
 Output: 0
 Input: "(c(oder)) b(yte)"
 Output: 1
+
+## Algorithm
+
+- create an empty stack to keep track of opening parenthesis
+- iterate over each character in the input string
+- if character in the input string is `(` push it onto the stack
+- if character is a closing bracket, check if stack is empty
+- if stack is empty return 0,
+- otherwise pop the element of the stack ie discard the last opening bracket
+- if stack is empty, all opening brackets have been matched.
